@@ -523,6 +523,10 @@ video {
   position: fixed;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -565,6 +569,10 @@ video {
 
 .z-20{
   z-index: 20;
+}
+
+.z-\[-1\]{
+  z-index: -1;
 }
 
 .mx-auto{
@@ -617,6 +625,18 @@ video {
   margin-right: 1.25rem;
 }
 
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .flex{
   display: flex;
 }
@@ -631,6 +651,18 @@ video {
 
 .h-3{
   height: 0.75rem;
+}
+
+.h-0\.5{
+  height: 0.125rem;
+}
+
+.h-0{
+  height: 0px;
+}
+
+.h-32{
+  height: 8rem;
 }
 
 .w-full{
@@ -651,6 +683,14 @@ video {
 
 .w-3{
   width: 0.75rem;
+}
+
+.w-1\/3{
+  width: 33.333333%;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .max-w-\[400px\]{
@@ -705,6 +745,10 @@ video {
   gap: 1.75rem;
 }
 
+.gap-32{
+  gap: 8rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -745,6 +789,10 @@ video {
 
 .bg-gradient-rainblue{
   background-image: linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%);
+}
+
+.bg-gradient-rainbow{
+  background-image: linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%);
 }
 
 .p-12{
@@ -814,6 +862,14 @@ video {
   padding-left: 0px;
 }
 
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pb-24{
+  padding-bottom: 6rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -846,6 +902,16 @@ video {
   line-height: 1;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -862,6 +928,11 @@ video {
 .text-deep-blue{
   --tw-text-opacity: 1;
   color: rgb(1 0 38 / var(--tw-text-opacity));
+}
+
+.text-red{
+  --tw-text-opacity: 1;
+  color: rgb(220 68 146 / var(--tw-text-opacity));
 }
 
 .transition{
@@ -1010,6 +1081,16 @@ body,
   top: -120px;
 }
 
+.before\:-top-10::before{
+  content: var(--tw-content);
+  top: -2.5rem;
+}
+
+.before\:-left-10::before{
+  content: var(--tw-content);
+  left: -2.5rem;
+}
+
 .before\:z-\[-1\]::before{
   content: var(--tw-content);
   z-index: -1;
@@ -1130,12 +1211,24 @@ body,
     margin-top: 8rem;
   }
 
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:flex{
     display: flex;
   }
 
   .md\:h-full{
     height: 100%;
+  }
+
+  .md\:w-1\/3{
+    width: 33.333333%;
+  }
+
+  .md\:w-3\/4{
+    width: 75%;
   }
 
   .md\:max-w-\[600px\]{
@@ -1152,6 +1245,10 @@ body,
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:gap-16{
+    gap: 4rem;
   }
 
   .md\:text-start{
