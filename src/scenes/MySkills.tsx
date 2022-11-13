@@ -46,6 +46,9 @@ const MySkills = (): JSX.Element => {
           )}
         </div>
       </div>
+
+    {/*  SKILLS  */}
+      <div className='md:flex md:justify-between mt-16 gap-32'></div>
     </section>
   )
 }
